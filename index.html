@@ -15,6 +15,14 @@
     <div id="app">
         <section>
             <div class="carosello" id="carosello">
+                <div class="photo" v-for="card in images">
+                    <img :src='card.image' alt="">
+                    <div class="description">
+                        <h2>{{card.title}}</h2>
+                        <p>{{card.text}}</p>
+                    </div>
+                  
+                </div>
              
                 <div class="button-arrow arrow-left" id="left" @click="goToLeft">
                     <i class="fa-solid fa-chevron-left"></i>

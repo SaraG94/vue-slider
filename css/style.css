@@ -19,9 +19,9 @@ section{
     justify-content: center;
 }
 
-/* .carosello{
+.carosello{
     position: relative;
-} */
+}
 
  /*****carosello*******/
 .photo img{
@@ -30,6 +30,19 @@ section{
 	object-position: center;
 } 
 
+/* .photo .description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%;
+    color: white;
+    background-color: #00000073;
+    line-height: 22px;
+    padding: 20px;
+    border-radius: 15px;
+} */
 /* .carosello .photo{
     display: none;
 }
@@ -38,7 +51,7 @@ section{
     display: block;
 } */
 
-/* .button-arrow{
+.button-arrow{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -52,4 +65,4 @@ section{
 
 .arrow-right{
     right: 10px;
-}  */
+} 

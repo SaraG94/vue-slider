@@ -21,24 +21,24 @@ section{
 
 /* .carosello{
     position: relative;
-}*/
+} */
 
  /*****carosello*******/
-/* .photo img{
+.photo img{
     aspect-ratio: 16/9;
 	object-fit: cover;
 	object-position: center;
-}
+} 
 
-.carosello .photo{
+/* .carosello .photo{
     display: none;
 }
 
 .carosello .active{
     display: block;
-}
+} */
 
-.button-arrow{
+/* .button-arrow{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -52,4 +52,4 @@ section{
 
 .arrow-right{
     right: 10px;
-}  */ 
+}  */

@@ -30,7 +30,7 @@ section{
 	object-position: center;
 } 
 
-/* .photo .description{
+.photo .description{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -42,14 +42,14 @@ section{
     line-height: 22px;
     padding: 20px;
     border-radius: 15px;
-} */
-/* .carosello .photo{
+}
+.carosello .photo{
     display: none;
 }
 
 .carosello .active{
     display: block;
-} */
+}
 
 .button-arrow{
     position: absolute;

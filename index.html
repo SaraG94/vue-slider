@@ -15,7 +15,8 @@
     <div id="app">
         <section>
             <div class="carosello" id="carosello">
-                <div class="photo" v-for="card in images">
+                <div class="photo" :class="(index === indicePhotoAttiva)? 'active' : ' ' " v-for="(card, index) in images">
+                    
                     <img :src='card.image' alt="">
                     <div class="description">
                         <h2>{{card.title}}</h2>

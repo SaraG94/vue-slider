@@ -4,7 +4,6 @@ createApp({
     data() {
         
         return {
-            message: 'Hello Vue!',
             images : [
                 {
                     image: './img/01.webp',
@@ -31,43 +30,28 @@ createApp({
                     title: "Marvel's Avengers",
                     text: "Marvel's Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay."
                 }
-            ]
+            ],
+
+            indicePhotoAttiva : 0 
         }
     },
     methods:{
         goToLeft() {
             console.log('clickleft')
     
-            if(indicePhotoAttiva>0){
-                let photoCorrente = photoCarosello[indicePhotoAttiva]
-                // rimuovere classe active
-                photoCorrente.classList.remove('active')
-        
+            if(this.indicePhotoAttiva>0){
+
                 // decrementare l'indice
-                indicePhotoAttiva -= 1
-        
-                let previousPhoto = photoCarosello[indicePhotoAttiva]
-                // aggiungere classe active
-                previousPhoto.classList.add('active')
+                this.indicePhotoAttiva -= 1
             }
         },
 
         goToRight() {
-            console.log('click')
-
-            // al click aggiungere e rimuovere classe active
         
-            if(indicePhotoAttiva<(photoCarosello.length-1)){
-                let photoCorrente = photoCarosello[indicePhotoAttiva]
-        
-                photoCorrente.classList.remove('active')
-        
+            if(this.indicePhotoAttiva<(this.images.length-1)){
+               
                 // aumentare l'indice
-                indicePhotoAttiva += 1
-        
-                let prossimaPhoto = photoCarosello[indicePhotoAttiva]
-                // aggiungere classe active
-                prossimaPhoto.classList.add('active')
+                this.indicePhotoAttiva += 1
             } 
         }
     }

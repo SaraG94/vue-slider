@@ -36,6 +36,7 @@ createApp({
     },
     methods:{
         goToLeft() {
+            console.log('clickleft')
     
             if(indicePhotoAttiva>0){
                 let photoCorrente = photoCarosello[indicePhotoAttiva]
@@ -52,6 +53,7 @@ createApp({
         },
 
         goToRight() {
+            console.log('click')
 
             // al click aggiungere e rimuovere classe active
         

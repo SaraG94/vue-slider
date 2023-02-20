@@ -1,0 +1,55 @@
+/********generale*********/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;  
+}
+
+/*******struttura*******/
+
+section{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* .carosello{
+    position: relative;
+}*/
+
+ /*****carosello*******/
+/* .photo img{
+    aspect-ratio: 16/9;
+	object-fit: cover;
+	object-position: center;
+}
+
+.carosello .photo{
+    display: none;
+}
+
+.carosello .active{
+    display: block;
+}
+
+.button-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    color: white;
+}
+
+.arrow-left{
+    left: 10px;
+}
+
+.arrow-right{
+    right: 10px;
+}  */ 

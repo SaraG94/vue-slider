@@ -9,14 +9,15 @@
     <title>Vue Slider</title>
 </head>
 <body>
-    <!--contenuto-->
+    <!--VUE-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
+    <!--contenuto-->
     <div id="app">
         <section>
             <div class="carosello" id="carosello">
-                <div class="photo" :class="(index === indicePhotoAttiva)? 'active' : ' ' " v-for="(card, index) in images">
-                    
+                <!--Classe photo+quando l'indice si incrementa aggiungo classe active altrimenti nulla+ciclo l'oggetto e l'indice nell'array images -->
+                <div class="photo" :class="(index === indicePhotoAttiva)? 'active' : ' ' " v-for="(card, index) in images"> 
+
                     <img :src='card.image' alt="">
                     <div class="description">
                         <h2>{{card.title}}</h2>

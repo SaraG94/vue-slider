@@ -43,6 +43,8 @@ createApp({
 
                 // decrementare l'indice
                 this.indicePhotoAttiva -= 1
+            }else{ //altrimenti
+                this.indicePhotoAttiva = this.images.length-1
             }
         },
 
@@ -52,7 +54,9 @@ createApp({
                
                 // aumentare l'indice
                 this.indicePhotoAttiva += 1
-            } 
+            }else{
+                this.indicePhotoAttiva = 0
+            }
         }
     }
 }).mount('#app')
